@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fillViewport="true">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_width="200dp"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Search Cities"
+                    android:layout_weight="1.01"
+                    android:paddingLeft="2dp"/>
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></LinearLayout>
+                <ImageButton
+
+                    android:id="@+id/citySearch"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_search"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp">
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="319dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/descriptionTitle"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingTop="10dp">
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cause"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/Cause"
+                        android:background="@drawable/button_shape"
+                        android:textColor="#212121"
+                        />
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"></LinearLayout>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="affected Areas"
+                        android:background="@drawable/button_shape"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/affectedAreas"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="3"
+                        android:shadowDy="1"
+                        android:shadowRadius="0"
+                        android:textColor="#212121"/>
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"></LinearLayout>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Counter action"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/CounterAction"
+                        android:background="@drawable/button_shape"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="3"
+                        android:shadowDy="1"
+                        android:shadowRadius="0"
+                        android:textColor="#212121"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

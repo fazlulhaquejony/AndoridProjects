@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Logout"
+        android:id="@+id/loginNav"
+        android:icon="@drawable/login" />
+
+    <item android:title="Send Report"
+        android:id="@+id/report"
+        android:icon="@drawable/probsub" />
+
+    <item android:title="Help"
+        android:id="@+id/nav_item_help"
+        android:icon="@drawable/help"/>
+
+    <item android:title="About"
+        android:id="@+id/nav_item_about"
+        android:icon="@drawable/about"/>
+
+    <item android:title="Exit"
+        android:id="@+id/nav_item_exit"
+        android:icon="@drawable/exit"/>
+
+
+
+</menu>

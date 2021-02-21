@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fuhad.mycitymyenvironment.MapsFragment">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapview"
+                    android:layout_width="312dp"
+                    android:layout_height="328dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <AutoCompleteTextView
+                    android:id="@+id/problemSearch"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_width="205dp"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Search Pollution Type"
+                    android:layout_weight="1.01"/>
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></LinearLayout>
+                <ImageButton
+
+                    android:id="@+id/problemSearchButton"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_search"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Air Pollution"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/AirPollution"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Water Pollution"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/WaterPollution"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Garbage"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/Garbage"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
